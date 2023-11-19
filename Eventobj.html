@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>let's see what is event object</h1><br>
+    <button id="way">Event Listner</button>
+    <script>
+        const way=document.getElementById('way');
+        const checkEvent=()=>{
+            console.log(event)
+            console.log(event.target)
+            console.log(event.type)
+        }
+        way.addEventListener('click',checkEvent);
+    </script>
+</body>
+</html>

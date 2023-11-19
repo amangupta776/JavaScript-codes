@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display:flex;
+           margin: 30px;
+           padding:30px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+<button onclick="alert('This awesome,but no one use me')">Simple Inline alert</button>
+<button onclick="cc()">By calling a function</button>
+<button id="third-way">Inline event</button>
+<button id="forth-way">Event listner</button>
+
+    </div>
+    <script>
+        const cc=()=>{
+            alert('This awesome,but Still old way')
+        }
+        const third=document.getElementById('third-way');
+        third.onclick=function(){
+            alert("third way")
+        }
+
+        const forth=document.getElementById('forth-way')
+        forth.addEventListener('click',()=>{
+alert("i love this way to listen a event")
+        })
+            </script>
+</body>
+</html>

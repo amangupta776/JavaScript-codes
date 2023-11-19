@@ -1,0 +1,11 @@
+
+console.log(Math.PI)
+console.log(Math.abs(-777))
+console.log(Math.ceil(99.1))
+console.log(Math.floor(99.1))
+console.log(Math.round(99.1))
+console.log(Math.min(0,-22,923,28,-21098))
+console.log(Math.max(0,-22,923,28,-21098))
+console.log(Math.floor(Math.random()*10))
+console.log(Math.trunc(4.555))
+console.log(Math.trunc(-94.555))

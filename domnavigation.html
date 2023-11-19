@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-div">
+        <div class="child-one">
+            <p>i am child one</p>
+        </div>
+        <div class="child-two">
+            <p>i am child two</p>
+        </div>
+        <div class="child-three">
+            <p>i am child three</p>
+        </div>
+    </div>
+    <script>
+        const firstChild=document.body.firstElementChild.firstElementChild
+        firstChild.style.color="red"
+        const seondchild=document.querySelector('.child-two')
+        seondchild.style.color="blue"
+        
+    </script>
+</body>
+</html>

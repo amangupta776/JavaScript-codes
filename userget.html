@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main_div">
+        <div>
+            <label for="">Your Name</label>
+            <input type="text" id="ice"><br>
+            <label for="">chose an ice cream
+                <select name="iceCreams" id="iceCreams" onchange="selectElement()">
+                <option value="">select one...</option>
+                <option value="chocolate">chocolate</option>
+                <option value="sardine">sardine</option>
+                <option value="vanilla">vanilla</option>
+            </select>
+            </label>
+            <br>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script>
+        const selectElement=()=>{
+            const inputChange=document.getElementById('ice').value
+            const iceCream=document.getElementById('iceCreams').value
+
+            console.log(`${inputChange} and ${iceCream}`)
+            const result=document.getElementById('result')
+            result.innerHTML=`${inputChange} Select ${iceCream} flavour`
+                }
+
+    </script>
+</body>
+</html>
